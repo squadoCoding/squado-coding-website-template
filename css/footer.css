@@ -1,0 +1,12 @@
+footer {
+  padding: 15px;
+  font-size: var(--fSizeLarge);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .logo {
+  display: inline-flex;
+  margin-left: 10px;
+}

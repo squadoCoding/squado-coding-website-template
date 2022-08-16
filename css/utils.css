@@ -1,121 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100vw;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+*::selection {
+  color: rgb(55, 5, 56);
+  background-color: rgb(17, 221, 47);
 }
 
 /*Global variables*/
-:root{
-    --colorBg: rgb(24, 24, 24);
-    --colorBgOther: rgb(55, 55, 55);
-    --colorPrimary: rgb(104, 232, 177);
-    --textColorSecondary: rgb(228, 228, 228);
-    --textColorPrimary: white;
-    --headingColor: rgb(95, 142, 251);
-    --fSizeNormal: 1rem;
-    --fSizeLarge: 1.5rem;
-    --fontHeading: 'Prompt', sans-serif;
-    --fontNormal: 'Roboto', sans-serif;
+:root {
+  --colorBg: rgb(24, 24, 24);
+  --colorBgOther: rgb(55, 55, 55);
+  --colorPrimary: rgb(104, 232, 177);
+  --textColorSecondary: rgb(228, 228, 228);
+  --textColorPrimary: white;
+  --headingColor: rgb(95, 142, 251);
+  --fSizeNormal: 1rem;
+  --fSizeLarge: 1.5rem;
+  --fontHeading: "Prompt", sans-serif;
+  --fontNormal: "Roboto", sans-serif;
 }
 
 /*Reusable code*/
-body{
-    background-color: var(--colorBg);
-    color: var(--textColorSecondary);
+body {
+  background-color: var(--colorBg);
+  color: var(--textColorSecondary);
 }
 
-*{
-    font-size: var(--fSizeNormal);
-    font-family: var(--fontNormal);
+* {
+  font-size: var(--fSizeNormal);
+  font-family: var(--fontNormal);
 }
 
 h1,
 h2,
-h3{
-    color: var(--headingColor);
-    font-family: var(--fontHeading);
-    margin-bottom: 25px;
+h3 {
+  color: var(--headingColor);
+  font-family: var(--fontHeading);
+  margin-bottom: 25px;
 }
 
-h1{
-    font-size: 2.5rem;
+h1 {
+  font-size: 2.5rem;
 }
 
-h2{
-    font-size: 2rem;
+h2 {
+  font-size: 2rem;
 }
 
-h3{
-    font-size: 1.5rem;
+h3 {
+  font-size: 1.5rem;
 }
 
-.btn{
-    background-color: var(--colorPrimary);
-    font-weight: 700;
-    padding: 10px 10px;
-    color: var(--textColorPrimary);
-    border-radius: 10px;
-    transition: background-color 0.3s;
-    cursor: pointer;
+.btn {
+  background-color: var(--colorPrimary);
+  font-weight: 700;
+  padding: 10px 10px;
+  color: var(--textColorPrimary);
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
-.btn:hover{
-    background-color: var(--textColorPrimary);
-    color: var(--colorPrimary);
+.btn:hover {
+  background-color: var(--textColorPrimary);
+  color: var(--colorPrimary);
 }
 
-.btnSecondary{
-    background-color: rgb(89, 153, 255);
-    font-weight: 700;
-    padding: 10px 10px;
-    color: white;
-    border-radius: 10px;
-    transition: background-color 0.3s;
-    cursor: pointer;
+.btnSecondary {
+  background-color: rgb(89, 153, 255);
+  font-weight: 700;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  cursor: pointer;
 }
 
-.btnSecondary:hover{
-    color: rgb(89, 153, 255);
-    background-color: white;
+.btnSecondary:hover {
+  color: rgb(89, 153, 255);
+  background-color: white;
 }
 
-.colorPrimary{
-    color: rgb(188, 245, 188);
-    text-shadow: 3px 3px 10px var(--colorPrimary);
+.colorPrimary {
+  color: rgb(188, 245, 188);
+  text-shadow: 3px 3px 10px var(--colorPrimary);
 }
 
-.width-80{
-    width: 80%;
+.width-80 {
+  width: 80%;
 }
 
-.width-50{
-    width: 50%;
+.width-50 {
+  width: 50%;
 }
 
-section{
-    margin: 3rem 0;
+section {
+  margin: 3rem 0;
 }
 
 /*Responcive*/
-@media screen and (max-width: 765px){
-    html{
-        font-size: 15px;
-    }
+@media screen and (max-width: 765px) {
+  html {
+    font-size: 15px;
+  }
 }
 
-@media screen and (max-width: 519px){
-    html{
-        font-size: 13px;
-    }
+@media screen and (max-width: 519px) {
+  html {
+    font-size: 13px;
+  }
 
-    .container{
-        width: 95%;
-    }
+  .container {
+    width: 95%;
+  }
 }
 
-@media screen and (max-width: 340px){
-    html{
-        font-size: 11px;
-    }
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 11px;
+  }
 }
